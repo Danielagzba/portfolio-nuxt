@@ -1,0 +1,48 @@
+<template>
+  <div class="mt-20 text-2xl font-bold text-center text-neutral-700">
+    Interested in collaboration?<br />Let's discuss what we can create together
+  </div>
+  <div
+    class="justify-center self-center px-5 py-3 mt-10 text-base font-medium text-white bg-blue-800 rounded-[360px]"
+  >
+    Contact me
+  </div>
+  <div class="self-center mt-20 text-sm text-neutral-700">
+    dbonteq@gmail.com
+  </div>
+  <div class="self-center mt-3 text-sm text-neutral-700">(808) 825-1815</div>
+  <div class="flex justify-center items-center px-16 mt-3">
+    <div class="flex gap-3">
+      <a
+        href="https://www.linkedin.com/in/daniela-bontecou-868b12123/"
+        target="_blank"
+      >
+        <Icon
+          size="24"
+          name="bi:linkedin"
+          class="shrink-0 my-auto aspect-[1.33] cursor-pointer"
+        />
+      </a>
+      <a href="https://www.instagram.com/danielagzba/">
+        <Icon
+          size="24"
+          name="bi:instagram"
+          class="shrink-0 my-auto aspect-[1.33] cursor-pointer"
+        />
+      </a>
+      <Icon
+        size="30"
+        name="material-symbols:mail"
+        class="shrink-0 my-auto aspect-[1.33] cursor-pointer"
+      />
+    </div>
+  </div>
+  <div class="flex gap-1 justify-center px-20 mt-11 text-xs text-zinc-600">
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/ce8a25468b15886340f46d751a785cd36333f80d67d0c9153610bfc83e7e3717?"
+      class="shrink-0 my-auto w-2 aspect-square"
+    />
+    <div>2024 Daniela Bontecou</div>
+  </div>
+</template>
