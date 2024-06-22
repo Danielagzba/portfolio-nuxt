@@ -1,12 +1,12 @@
 <script setup lang="ts">
 interface Props {
-  link: string;
-  image: string;
-  title: string;
-  date: string;
+  link: string
+  image: string
+  title: string
+  date: string
 }
 
-defineProps<Props>();
+defineProps<Props>()
 </script>
 
 <template>
@@ -16,9 +16,7 @@ defineProps<Props>();
       loading="lazy"
       :srcSet="image"
     />
-    <div
-      class="flex gap-5 justify-between mt-3 text-base font-semibold text-primary-default montserrat-semi-bold"
-    >
+    <div class="flex gap-5 justify-between mt-3 text-[16px] leading-6">
       <div>{{ title }}</div>
       <div>{{ date }}</div>
     </div>
