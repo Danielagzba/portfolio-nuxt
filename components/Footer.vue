@@ -1,6 +1,7 @@
 <template>
   <div class="mt-10 font-lora font-medium text-2xl leading-8 text-center">
-    Interested in collaboration? Let's discuss what we can create together
+    Interested in collaboration? <br />
+    Let's discuss what we can create together
   </div>
   <div
     class="justify-center self-center px-5 py-3 mt-10 font-semibold text-white bg-[#D96B62] rounded-[360px]"
