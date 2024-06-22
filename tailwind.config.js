@@ -2,12 +2,6 @@
 export default {
   content: [],
   theme: {
-    fontFamily: {
-      sans: ['Montserrat', 'sans-serif'],
-      serif: ['Montserrat', 'serif'],
-      mono: ['Montserrat', 'monospace'],
-      lora: ['Lora', 'sans-serif'],
-    },
     extend: {
       colors: {
         primary: {

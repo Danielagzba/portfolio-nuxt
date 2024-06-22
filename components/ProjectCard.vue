@@ -10,7 +10,7 @@ defineProps<Props>()
 </script>
 
 <template>
-  <NuxtLink class="mt-10 w-full md:w-auto" :to="link">
+  <NuxtLink class="w-full md:w-auto" :to="link">
     <img
       class="w-full rounded-[10px] h-[323px] object-cover"
       loading="lazy"

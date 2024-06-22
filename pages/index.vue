@@ -30,13 +30,13 @@ const projects = [
 <template>
   <div class="flex flex-col px-4 py-9 mx-auto w-full bg-stone-100">
     <Header class="mt-5 mb-10" />
-    <h1 class="text-[26px] font-lora">
+    <h1 class="text-[26px] font-lora font-normal mb-10">
       Daniela Bontecou is a
       <span class="text-[#D96B62]">UI designer</span> specializing in creating
       impactful brand identities for seamless brand experiences.
     </h1>
 
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
       <ProjectCard
         v-for="project in projects"
         :link="project.link"
