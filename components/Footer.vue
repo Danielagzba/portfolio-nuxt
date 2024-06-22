@@ -1,5 +1,7 @@
 <template>
-  <div class="mt-20 text-2xl font-bold text-center text-neutral-700">
+  <div
+    class="mt-20 text-2xl font-bold text-center text-primary-default montserrat-semi-bold"
+  >
     Interested in collaboration?<br />Let's discuss what we can create together
   </div>
   <div
@@ -7,10 +9,12 @@
   >
     Contact me
   </div>
-  <div class="self-center mt-20 text-sm text-neutral-700">
+  <div class="self-center mt-20 text-sm text-neutral-700 montserrat-regular">
     dbonteq@gmail.com
   </div>
-  <div class="self-center mt-3 text-sm text-neutral-700">(808) 825-1815</div>
+  <div class="self-center mt-3 text-sm montserrat-regular text-neutral-700">
+    (808) 825-1815
+  </div>
   <div class="flex justify-center items-center px-16 mt-3">
     <div class="flex gap-3">
       <a
@@ -43,6 +47,6 @@
       src="https://cdn.builder.io/api/v1/image/assets/TEMP/ce8a25468b15886340f46d751a785cd36333f80d67d0c9153610bfc83e7e3717?"
       class="shrink-0 my-auto w-2 aspect-square"
     />
-    <div>2024 Daniela Bontecou</div>
+    <div class="montserrat-regular">2024 Daniela Bontecou</div>
   </div>
 </template>

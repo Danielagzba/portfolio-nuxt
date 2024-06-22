@@ -17,7 +17,7 @@ defineProps<Props>();
       :srcSet="image"
     />
     <div
-      class="flex gap-5 justify-between mt-3 text-base font-semibold text-black"
+      class="flex gap-5 justify-between mt-3 text-base font-semibold text-primary-default montserrat-semi-bold"
     >
       <div>{{ title }}</div>
       <div>{{ date }}</div>

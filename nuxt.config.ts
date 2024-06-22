@@ -2,9 +2,5 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss", "nuxt-icon", "@nuxt/fonts"],
-  fonts: {
-    families: [
-      { name: 'Montserrat', provider: 'google' },
-    ],
-  }
-})
+  css: ["~/assets/css/main.css"],
+});
