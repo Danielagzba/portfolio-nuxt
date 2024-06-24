@@ -49,7 +49,7 @@ const handleCancel = () => {
           Contact
         </DialogTitle>
         <DialogDescription>
-          <form @submit.prevent="handleSubmit">
+          <form @submit.prevent="handleSubmit" class="px-[10px]">
             <input
               v-model="email"
               type="email"
@@ -62,7 +62,7 @@ const handleCancel = () => {
                 v-model="message"
                 placeholder="Write your message..."
                 rows="5"
-                class="w-full px-2 py-3 focus:outline-none focus:ring-none"
+                class="w-full px-2 py-3 focus:outline-none focus:ring-none min-h-[500px]"
                 required
               ></textarea>
             </div>
