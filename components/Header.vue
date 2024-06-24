@@ -16,31 +16,35 @@ const navMenuLinks = [
 </script>
 
 <template>
-  <div class="flex gap-5 justify-between items-center">
-    <NuxtLink to="/">
-      <img
-        loading="lazy"
-        srcSet="/logo2.png"
-        class="sm:hidden shrink-0 aspect-square w-12 lg:w-22"
-      />
-      <span class="hidden font-semibold text-2xl sm:block">
-        Daniela Bontecou
-      </span>
-    </NuxtLink>
-    <!-- Burger menu -->
-    <Icon
-      size="20"
-      name="iconamoon:menu-burger-horizontal"
-      class="sm:!hidden shrink-0 my-auto aspect-[1.33] cursor-pointer"
-    />
-    <div class="capitalize hidden sm:flex gap-6 cursor-pointer montserrat-bold">
-      <NuxtLink
-        v-for="link in navMenuLinks"
-        :to="link.to"
-        class="font-semibold text-2xl hover:underline"
-      >
-        {{ link.text }}
-      </NuxtLink>
+  <div class="w-screen sm:bg-[#C3DECF]">
+    <div class="max-w-screen-lg mx-auto">
+      <div class="flex w-full gap-5 justify-between items-center">
+        <NuxtLink to="/">
+          <img
+            loading="lazy"
+            srcSet="/logo2.png"
+            class="sm:hidden shrink-0 aspect-square w-12 lg:w-22"
+          />
+          <span class="hidden font-semibold text-2xl sm:block">
+            Daniela Bontecou
+          </span>
+        </NuxtLink>
+        <!-- Burger menu -->
+        <Icon
+          size="20"
+          name="iconamoon:menu-burger-horizontal"
+          class="sm:!hidden shrink-0 my-auto aspect-[1.33] cursor-pointer"
+        />
+        <div class="capitalize hidden sm:flex gap-6">
+          <NuxtLink
+            v-for="link in navMenuLinks"
+            :to="link.to"
+            class="font-semibold text-2xl hover:underline"
+          >
+            {{ link.text }}
+          </NuxtLink>
+        </div>
+      </div>
     </div>
   </div>
 </template>
