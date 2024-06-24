@@ -4,11 +4,15 @@
       Interested in collaboration? <br />
       Let's discuss what we can create together
     </div>
-    <button
-      class="justify-center self-center px-5 py-3 mt-10 font-semibold text-white bg-[#D96B62] rounded-[360px]"
-    >
-      Contact me
-    </button>
+    <div class="mt-10 self-center">
+      <ContactDialog>
+        <button
+          class="px-5 py-3 font-semibold text-white bg-[#D96B62] rounded-[360px]"
+        >
+          Contact me
+        </button>
+      </ContactDialog>
+    </div>
     <div class="self-center mt-20 text-sm text-neutral-700">
       dbonteq@gmail.com
     </div>
