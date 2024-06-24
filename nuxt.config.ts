@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     'shadcn-nuxt',
     'nuxt-mail',
+    '@vueuse/nuxt',
   ],
   runtimeConfig: {
     GMAIL_USERNAME: process.env.GMAIL_USERNAME,

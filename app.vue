@@ -7,8 +7,8 @@ import Toaster from '@/components/ui/toast/Toaster.vue'
     <Header class="py-10 px-4 md:px-8" />
     <div class="pb-10 px-4 max-w-screen-lg mx-auto">
       <NuxtPage />
-      <Footer />
     </div>
+    <Footer />
     <Toaster />
   </div>
 </template>

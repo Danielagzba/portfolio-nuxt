@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col">
+  <div class="flex flex-col border-t border-[#C9C5C5]">
     <div class="mt-10 font-lora font-medium text-2xl leading-8 text-center">
       Interested in collaboration? <br />
       Let's discuss what we can create together
