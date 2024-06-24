@@ -44,7 +44,7 @@ const projects = [
         </h1>
       </div>
 
-      <div class="grid sm:grid-cols-2 gap-y-5 gap-x-10">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-5 gap-x-10">
         <ProjectCard
           v-for="project in projects"
           :link="project.link"
