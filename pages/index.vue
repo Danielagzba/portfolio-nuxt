@@ -1,30 +1,5 @@
 <script setup lang="ts">
-const projects = [
-  {
-    link: 'airbnb',
-    title: 'Airbnb',
-    date: '2024',
-    image: '/airbnb.png',
-  },
-  {
-    link: 'smartskin',
-    title: 'Smart Skin',
-    date: '2024',
-    image: '/smartsk.png',
-  },
-  {
-    link: 'costrean',
-    title: 'Costream',
-    date: '2024',
-    image: '/co.png',
-  },
-  {
-    link: 'brainwave',
-    title: 'Brain Wave',
-    date: '2024',
-    image: '/gobble.png',
-  },
-]
+import { projects } from '~/lib/constants'
 </script>
 
 <template>
@@ -47,10 +22,10 @@ const projects = [
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-5 gap-x-10">
         <ProjectCard
           v-for="project in projects"
-          :link="project.link"
-          :title="project.title"
+          :link="`/projects/${project.name}`"
+          :title="project.name"
           :date="project.date"
-          :image="project.image"
+          :image="project.images[0]"
         />
       </div>
       <Footer />
