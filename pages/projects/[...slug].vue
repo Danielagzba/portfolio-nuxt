@@ -44,7 +44,11 @@ onMounted(() => {
     <div class="mt-8">
       <h2 class="font-semibold text-2xl">Timeline</h2>
       <p class="font-medium mt-2">{{ project.timeline }}</p>
-      <img class="mt-10" :src="project.images[0]" alt="designs on a phone" />
+      <img
+        class="mt-10 rounded-[20px]"
+        :src="project.images[0]"
+        alt="designs on a phone"
+      />
     </div>
 
     <div class="mt-8">

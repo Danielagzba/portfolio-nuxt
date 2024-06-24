@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const navMenuLinks = [
   {
-    to: '/work',
+    to: '/',
     text: 'work',
   },
   {
