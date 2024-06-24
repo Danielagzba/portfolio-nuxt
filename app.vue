@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import Toaster from '@/components/ui/toast/Toaster.vue'
+</script>
+
 <template>
   <div class="flex flex-col mx-auto">
     <Header class="py-10 px-4 md:px-8" />
@@ -5,5 +9,6 @@
       <NuxtPage />
       <Footer />
     </div>
+    <Toaster />
   </div>
 </template>

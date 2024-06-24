@@ -1,11 +1,34 @@
 <script lang="ts" setup>
+import { useToast } from './ui/toast'
+
+const mail = useMail()
+const { toast } = useToast()
+
 const email = ref('')
 const message = ref('')
 
 const handleSubmit = () => {
-  // Reset form after submission
-  email.value = ''
-  message.value = ''
+  console.log('submitted')
+  if (email.value.length < 2) {
+    toast({
+      title: 'Email Required',
+      description: 'Please input a valid email',
+    })
+  } else if (message.value.length < 10) {
+    toast({
+      title: 'Minimum 10 characters',
+      description: 'Message must be longer than 10 characters',
+    })
+  } else {
+    mail.send({
+      from: email.value,
+      subject: 'Portfolio - Contact Form',
+      text: message.value,
+    })
+    // Reset form after submission
+    email.value = ''
+    message.value = ''
+  }
 }
 
 const handleCancel = () => {
@@ -43,27 +66,24 @@ const handleCancel = () => {
                 required
               ></textarea>
             </div>
+            <div class="flex justify-end gap-[6px]">
+              <button
+                type="button"
+                @click="handleCancel"
+                class="flex items-start px-4 py-1 bg-gray-200 text-[#5D5D5D] rounded-full hover:bg-gray-300 font-medium text-[14px] min-w-[100px]"
+              >
+                Cancel
+              </button>
+              <button
+                type="submit"
+                class="flex items-start px-4 py-1 bg-black text-[#FEFEFE] rounded-full hover:bg-gray-800 font-medium text-[14px] min-w-[100px]"
+              >
+                Send
+              </button>
+            </div>
           </form>
         </DialogDescription>
       </DialogHeader>
-
-      <DialogFooter>
-        <div class="flex justify-end gap-[6px]">
-          <button
-            type="button"
-            @click="handleCancel"
-            class="flex items-start px-4 py-1 bg-gray-200 text-[#5D5D5D] rounded-full hover:bg-gray-300 font-medium text-[14px] min-w-[100px]"
-          >
-            Cancel
-          </button>
-          <button
-            type="submit"
-            class="flex items-start px-4 py-1 bg-black text-[#FEFEFE] rounded-full hover:bg-gray-800 font-medium text-[14px] min-w-[100px]"
-          >
-            Send
-          </button>
-        </div>
-      </DialogFooter>
     </DialogContent>
   </Dialog>
 </template>

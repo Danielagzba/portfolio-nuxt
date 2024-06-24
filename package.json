@@ -16,6 +16,7 @@
     "lucide-vue-next": "^0.396.0",
     "nuxt": "^3.12.1",
     "nuxt-icon": "^0.6.10",
+    "nuxt-mail": "^5.0.1",
     "radix-vue": "^1.8.4",
     "shadcn-nuxt": "^0.10.4",
     "tailwind-merge": "^2.3.0",
