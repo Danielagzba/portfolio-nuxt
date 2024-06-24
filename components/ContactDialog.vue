@@ -23,7 +23,10 @@ const handleSubmit = () => {
     mail.send({
       from: email.value,
       subject: 'Portfolio - Contact Form',
-      text: message.value,
+      text: `
+      From: ${email.value}
+      Message: ${message.value}
+      `,
     })
     // Reset form after submission
     email.value = ''
