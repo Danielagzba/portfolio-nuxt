@@ -1,3 +1,7 @@
+body {
+  @apply bg-stone-100;
+}
+
 .font-lora {
   font-family: Lora, sans-serif;
 }
