@@ -2,11 +2,15 @@
 const navMenuLinks = [
   {
     to: '/',
-    text: 'work',
+    text: 'home',
   },
   {
     to: '/about',
     text: 'about',
+  },
+  {
+    to: '/cv',
+    text: 'CV',
   },
 ]
 </script>
