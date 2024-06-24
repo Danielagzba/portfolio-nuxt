@@ -1,45 +1,27 @@
+<script setup lang="ts">
+import { projects } from '~/lib/constants'
+</script>
+
 <template>
-  <div class="flex flex-col px-4 py-9 mx-auto w-full bg-stone-100">
-    <Header />
-    <div
-      class="mt-10 text-[32px] md:text-[48px] font-bold text-neutral-70 font-display gloria-hallelujah-regular text-primary-default"
-    >
-      Hey there, I am Daniela!
-    </div>
-    <div
-      class="mt-3 text-lg md:text-xl montserrat-regular text-primary-light max-w-[920px]"
-    >
-      I am a UI designer with a background in graphic design and photography.
-      <br />I am passionate about creating intuitive and meaningful experiences
-      that unite people and communities. Let's discuss user behavior,
-      accessibility, and photography.
-    </div>
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-      <ProjectCard
-        link="airbnb"
-        title="Airbnb"
-        date="2024"
-        image="/airbnb.png"
-      />
-      <ProjectCard
-        link="smartskin"
-        title="Smart Skin"
-        date="2024"
-        image="/smartsk.png"
-      />
-      <ProjectCard
-        link="costrean"
-        title="Costream"
-        date="2024"
-        image="/co.png"
-      />
-      <ProjectCard
-        link="brainwave"
-        title="Brain Wave"
-        date="2024"
-        image="/gobble.png"
-      />
-    </div>
-    <Footer />
+  <div class="flex items-center py-10 gap-10">
+    <img
+      src="/cool-kid-standing.png"
+      class="hidden sm:block max-w-[270px] max-h-[250px]"
+    />
+    <h1 class="text-[26px] font-lora font-normal mb-10">
+      Daniela Bontecou is a
+      <span class="text-[#D96B62]">UI designer</span> specializing in creating
+      impactful brand identities for seamless brand experiences.
+    </h1>
+  </div>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-5 gap-x-10">
+    <ProjectCard
+      v-for="project in projects"
+      :link="`/projects/${project.name}`"
+      :title="project.name"
+      :date="project.date"
+      :image="project.images[0]"
+    />
   </div>
 </template>
