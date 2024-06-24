@@ -4,6 +4,6 @@ export default defineNuxtConfig({
     head: {},
   },
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxt/fonts'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxt/fonts', 'shadcn-nuxt'],
   css: ['~/assets/css/main.css'],
 })

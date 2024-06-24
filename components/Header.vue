@@ -29,21 +29,29 @@ const navMenuLinks = [
             Daniela Bontecou
           </span>
         </NuxtLink>
-        <!-- Burger menu -->
-        <Icon
-          size="20"
-          name="iconamoon:menu-burger-horizontal"
-          class="sm:!hidden shrink-0 my-auto aspect-[1.33] cursor-pointer"
-        />
-        <div class="capitalize hidden sm:flex gap-6">
-          <NuxtLink
-            v-for="link in navMenuLinks"
-            :to="link.to"
-            class="font-semibold text-2xl hover:underline"
-          >
-            {{ link.text }}
-          </NuxtLink>
-        </div>
+
+        <Menubar class="sm:hidden">
+          <MenubarMenu>
+            <MenubarTrigger class="sm:hidden">
+              <Icon
+                size="20"
+                name="iconamoon:menu-burger-horizontal"
+                class="shrink-0 my-auto aspect-[1.33] cursor-pointer"
+              />
+            </MenubarTrigger>
+            <MenubarContent>
+              <NuxtLink v-for="link in navMenuLinks" :to="link.to">
+                <MenubarItem
+                  class="mx-auto font-semibold text-2xl hover:underline cursor-pointer capitalize"
+                >
+                  {{ link.text }}
+                </MenubarItem>
+              </NuxtLink>
+            </MenubarContent>
+          </MenubarMenu>
+        </Menubar>
+
+        <div class="capitalize hidden sm:flex gap-6"></div>
       </div>
     </div>
   </div>
