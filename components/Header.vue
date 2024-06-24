@@ -51,7 +51,15 @@ const navMenuLinks = [
           </MenubarMenu>
         </Menubar>
 
-        <div class="capitalize hidden sm:flex gap-6"></div>
+        <div class="capitalize hidden sm:flex gap-6">
+          <NuxtLink
+            class="font-semibold text-2xl hover:underline cursor-pointer"
+            v-for="link in navMenuLinks"
+            :to="link.to"
+          >
+            {{ link.text }}
+          </NuxtLink>
+        </div>
       </div>
     </div>
   </div>
