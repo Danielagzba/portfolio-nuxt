@@ -12,7 +12,7 @@ const skills = [
 <template>
   <div>
     <div class="flex flex-col w-full items-center justify-center">
-      <h1 class="font-semibold text-[26px] md:mt-[60px]">
+      <h1 class="font-semibold text-[26px] md:mt-[60px] md:text-[32px]">
         Get to know <span class="text-[#D96B62]">me</span> more
       </h1>
       <img
@@ -21,7 +21,7 @@ const skills = [
       />
     </div>
 
-    <div class="flex flex-col gap-4 font-medium leading-6 mt-10">
+    <div class="flex flex-col gap-4 font-medium leading-6 mt-10 md:text-xl">
       <p>
         For the past years I've learned the skills to seamlessly created
         beautiful graphics. This approach ensures that user experiences are not
