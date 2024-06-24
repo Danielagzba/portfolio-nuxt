@@ -8,10 +8,6 @@ const navMenuLinks = [
     to: '/about',
     text: 'about',
   },
-  {
-    to: '/contact',
-    text: 'contact',
-  },
 ]
 </script>
 
@@ -40,13 +36,25 @@ const navMenuLinks = [
               />
             </MenubarTrigger>
             <MenubarContent>
-              <NuxtLink v-for="link in navMenuLinks" :to="link.to">
+              <NuxtLink
+                v-for="link in navMenuLinks"
+                :to="link.to"
+                class="hover:bg-white"
+              >
                 <MenubarItem
                   class="mx-auto font-semibold text-2xl hover:underline cursor-pointer capitalize"
                 >
                   {{ link.text }}
                 </MenubarItem>
               </NuxtLink>
+
+              <ContactDialog>
+                <span
+                  class="ml-2 mx-auto font-semibold text-2xl hover:underline cursor-pointer capitalize"
+                >
+                  Contact
+                </span>
+              </ContactDialog>
             </MenubarContent>
           </MenubarMenu>
         </Menubar>
@@ -59,6 +67,13 @@ const navMenuLinks = [
           >
             {{ link.text }}
           </NuxtLink>
+          <ContactDialog>
+            <span
+              class="mx-auto font-semibold text-2xl hover:underline cursor-pointer capitalize"
+            >
+              Contact
+            </span>
+          </ContactDialog>
         </div>
       </div>
     </div>
