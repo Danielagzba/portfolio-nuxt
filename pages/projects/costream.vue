@@ -41,10 +41,9 @@
         <h2 class="font-semibold text-2xl">Goals:</h2>
         <div class="text-medium leading-[32px] gap-2 p-2 mt-10">
           <p>
-            The Costream platform is normally used to watch matches of the game
-            League of Legends. The goal of this project was to create five
-            screens that update information simultaneously while a match is
-            happening.
+            The Costream platform is used to watch matches of the game League of
+            Legends. The goal of this project was to create five screens that
+            update information in realtime while a match is happening.
           </p>
         </div>
       </div>
