@@ -21,7 +21,7 @@ import { projects } from '~/lib/constants'
       :link="`/projects/${project.name}`"
       :title="project.name"
       :date="project.date"
-      :image="project.images[0]"
+      :image="project.landingImage"
     />
   </div>
 </template>

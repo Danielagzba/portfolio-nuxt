@@ -44,6 +44,7 @@ export const projects = [
       'I am a UI designer with a background in graphic design and photography.',
       "I am passionate about creating intuitive and meaningful experiences that unite people and communities. Let's discuss user behavior, accessibility, and photography. nisi placerat. lobortis, dui Lorem dui eget id quam quis dolor eu sit Nunc hendrerit ultrices laoreet Donec lobortis, nulla, In Vestibulum ultrices Praesent",
     ],
+    landingImage: '/airbnb-landing.png',
     images: ['/airbnb1.png', '/airbnb1.png', '/airbnb1.png'],
     carouselImages: [
       '/airbnb-carousel1.png',
@@ -64,9 +65,8 @@ export const projects = [
     ],
   },
   {
-    name: 'Smart Skin',
-    description:
-      'Airbnb is a platform that unlocks rewards for clothing donations and provides an up-cycled shopping experience.',
+    name: 'Costream',
+    description: '',
     tasks: [
       'Research',
       'UI Design',
@@ -75,6 +75,7 @@ export const projects = [
       'Graphic Design',
       'Usability Testing',
     ],
+    landingImage: '/costream-landing.png',
     date: '2024',
     timeline: 'Aug 2023 - Oct 2024',
     problems: [
@@ -85,12 +86,12 @@ export const projects = [
       'I am a UI designer with a background in graphic design and photography.',
       "I am passionate about creating intuitive and meaningful experiences that unite people and communities. Let's discuss user behavior, accessibility, and photography. nisi placerat. lobortis, dui Lorem dui eget id quam quis dolor eu sit Nunc hendrerit ultrices laoreet Donec lobortis, nulla, In Vestibulum ultrices Praesent",
     ],
+
     images: ['/smartsk.png', '/smartsk.png', '/smartsk.png'],
   },
   {
-    name: 'Costream',
-    description:
-      'Airbnb is a platform that unlocks rewards for clothing donations and provides an up-cycled shopping experience.',
+    name: 'Gobble',
+    description: '',
     tasks: [
       'Research',
       'UI Design',
@@ -99,6 +100,7 @@ export const projects = [
       'Graphic Design',
       'Usability Testing',
     ],
+    landingImage: '/gobble-landing.png',
     date: '2024',
     timeline: 'Aug 2023 - Oct 2023',
     problems: [
@@ -112,7 +114,7 @@ export const projects = [
     images: ['/co.png', '/co.png', '/co.png'],
   },
   {
-    name: 'Brain Wave',
+    name: 'Earthship',
     description:
       'Airbnb is a platform that unlocks rewards for clothing donations and provides an up-cycled shopping experience.',
     tasks: [
@@ -123,6 +125,7 @@ export const projects = [
       'Graphic Design',
       'Usability Testing',
     ],
+    landingImage: '/earthship-landing.png',
     date: '2024',
     timeline: 'Aug 2023 - Oct 2023',
     problems: [
