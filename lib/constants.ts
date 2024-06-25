@@ -114,7 +114,7 @@ export const projects = [
     images: ['/co.png', '/co.png', '/co.png'],
   },
   {
-    name: 'Earthship',
+    name: 'Earthships',
     description:
       'Airbnb is a platform that unlocks rewards for clothing donations and provides an up-cycled shopping experience.',
     tasks: [
