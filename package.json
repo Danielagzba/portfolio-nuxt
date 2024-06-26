@@ -17,6 +17,7 @@
     "embla-carousel-vue": "^8.1.5",
     "lucide-vue-next": "^0.396.0",
     "nuxt": "^3.12.1",
+    "nuxt-gtag": "^2.0.6",
     "nuxt-icon": "^0.6.10",
     "nuxt-mail": "^5.0.1",
     "radix-vue": "^1.8.4",
