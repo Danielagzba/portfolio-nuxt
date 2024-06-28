@@ -1,21 +1,21 @@
 <script setup lang="ts">
 const skills = [
-  'Product Design',
-  'UI Design',
-  'Branding',
-  'Autolayout',
-  'Graphic Design',
-  'Wireframing',
-]
+  "Product Design",
+  "UI Design",
+  "Branding",
+  "Autolayout",
+  "Graphic Design",
+  "Wireframing",
+];
 
 const tools = [
-  'Figma',
-  'Adobe Illustrator',
-  'Adobe Lightroom',
-  'Adobe Premiere Pro',
-  'Canva',
-  'Spreadsheets',
-]
+  "Figma",
+  "Adobe Illustrator",
+  "Adobe Lightroom",
+  "Adobe Premiere Pro",
+  "Canva",
+  "Spreadsheets",
+];
 </script>
 
 <template>
@@ -41,7 +41,7 @@ const tools = [
       <p>
         Recently I just graduated form the UI bootcamp at Memorisley, where. I
         learned the latests best practices of Figma, I am confident with my
-        skill set I'll be able to create beautiful
+        skill set I'll be able to create beautiful designs.
       </p>
     </div>
 
